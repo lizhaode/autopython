@@ -11,8 +11,8 @@ IP = '120.26.14.118'
 port = 2299
 ID = 'root'
 Password = 'M4tHob1c{'
-choose = input('请输入要选择的统计项目，1:启动 2:退出 3:时间\n')
-filterchar = '11:11:11:11:11'
+choose = input('请输入要选择的统计项目,1:启动 2:退出 3:时间\n')
+filterchar = input('请输入要过滤的MAC地址:\n')
 
 util.log_to_file('/Users/lizhao/Downloads/debugssh.log')
 
