@@ -33,7 +33,7 @@ def tjchoose(choose, localpath):
 # 统计内容过滤
 def tjsearch(tjcondition, filepath):
     if os.path.exists(filepath):
-        fp = open(filepath)
+        fp = open(filepath,encoding='utf-8')    # 不定义encoding win下会编码错误
         for i in fp.readlines():
             result = re.findall(tjcondition, i)
             if result != []:
