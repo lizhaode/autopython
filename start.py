@@ -4,6 +4,8 @@ import time
 
 count = 1
 num = 0
+usetime = []
+closetime = []
 while (count < 11):
     print('开始启动......')
     if os.popen('"C:\\Program Files (x86)\\Droid4X\\droid4x.exe"'):
@@ -27,8 +29,7 @@ while (count < 11):
 
     t = time2 - time1
     t1 = time4 - time3
-    usetime = []
-    closetime = []
+    
     usetime.append(t.seconds)
     closetime.append(t1.seconds)
     print('第%d次启动用时:'%count,usetime[num],t)
